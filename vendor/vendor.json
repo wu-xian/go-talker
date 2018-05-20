@@ -1,0 +1,37 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "vBH0XzHZhFYooVKg+junrTeAfFY=",
+			"path": "github.com/astaxie/beego/logs",
+			"revision": "f16688817aa428d10361394015b40d096b680542",
+			"revisionTime": "2017-12-18T11:18:59Z"
+		},
+		{
+			"checksumSHA1": "OLPA0Q8Rg5LYMddux054RvUQUTM=",
+			"path": "github.com/cjbassi/termui",
+			"revision": "75525ee19c41f52324024b7a2bf31edcd1428494",
+			"revisionTime": "2018-04-22T03:57:04Z"
+		},
+		{
+			"checksumSHA1": "du6NkYFlK2UnPki8fQIs7NXrkIE=",
+			"path": "github.com/golang/protobuf/proto",
+			"revision": "e09c5db296004fbe3f74490e84dcd62c3c5ddb1b",
+			"revisionTime": "2018-03-28T16:31:53Z"
+		},
+		{
+			"checksumSHA1": "l8BBWZlYp/n2FAMBvIN53o+uRNw=",
+			"path": "github.com/urfave/cli",
+			"revision": "8e01ec4cd3e2d84ab2fe90d8210528ffbb06d8ff",
+			"revisionTime": "2018-02-26T03:02:53Z"
+		},
+		{
+			"checksumSHA1": "jAgCAPJEL3/CoZ5d14CTjc1sWJk=",
+			"path": "gopkg.in/ini.v1",
+			"revision": "6333e38ac20b8949a8dd68baa3650f4dee8f39f0",
+			"revisionTime": "2018-03-08T09:54:59Z"
+		}
+	],
+	"rootPath": "github.com/wu-xian/go-talker"
+}
