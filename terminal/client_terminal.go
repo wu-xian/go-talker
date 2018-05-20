@@ -2,10 +2,11 @@ package terminal
 
 import (
 	"fmt"
-	"learn/src/go-talker/proto"
 	"sync"
 
-	"learn/src/go-talker/log"
+	"github.com/wu-xian/go-talker/proto"
+
+	"github.com/wu-xian/go-talker/log"
 
 	ui "github.com/cjbassi/termui"
 )

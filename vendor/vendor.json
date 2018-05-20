@@ -3,10 +3,55 @@
 	"ignore": "test",
 	"package": [
 		{
+			"path": "bufio",
+			"revision": ""
+		},
+		{
+			"path": "bytes",
+			"revision": ""
+		},
+		{
+			"path": "crypto/tls",
+			"revision": ""
+		},
+		{
+			"path": "encoding",
+			"revision": ""
+		},
+		{
+			"path": "encoding/binary",
+			"revision": ""
+		},
+		{
+			"path": "encoding/hex",
+			"revision": ""
+		},
+		{
+			"path": "encoding/json",
+			"revision": ""
+		},
+		{
+			"path": "errors",
+			"revision": ""
+		},
+		{
+			"path": "flag",
+			"revision": ""
+		},
+		{
+			"path": "fmt",
+			"revision": ""
+		},
+		{
 			"checksumSHA1": "vBH0XzHZhFYooVKg+junrTeAfFY=",
 			"path": "github.com/astaxie/beego/logs",
 			"revision": "f16688817aa428d10361394015b40d096b680542",
 			"revisionTime": "2017-12-18T11:18:59Z"
+		},
+		{
+			"path": "github.com/cjbassi/drawille-go",
+			"revision": "ad535d0f92cd951308cdb80675e05c62c6b8b296",
+			"revisionTime": "2018-02-12T06:14:28Z"
 		},
 		{
 			"checksumSHA1": "OLPA0Q8Rg5LYMddux054RvUQUTM=",
@@ -21,16 +66,173 @@
 			"revisionTime": "2018-03-28T16:31:53Z"
 		},
 		{
+			"path": "github.com/mattn/go-runewidth",
+			"revision": "ce7b0b5c7b45a81508558cd1dba6bb1e4ddb51bb",
+			"revisionTime": "2018-04-08T05:53:51Z"
+		},
+		{
+			"path": "github.com/nsf/termbox-go",
+			"revision": "7cbfaac9e282b3ea0cefeddc67b2c3ed3aaf97bc",
+			"revisionTime": "2018-04-18T04:23:32Z"
+		},
+		{
 			"checksumSHA1": "l8BBWZlYp/n2FAMBvIN53o+uRNw=",
 			"path": "github.com/urfave/cli",
 			"revision": "8e01ec4cd3e2d84ab2fe90d8210528ffbb06d8ff",
 			"revisionTime": "2018-02-26T03:02:53Z"
 		},
 		{
+			"path": "github.com/wu-xian/go-talker/client",
+			"revision": "adc146eef18a2e096ccfda69d6681d0f62109191",
+			"revisionTime": "2018-05-20T01:07:44Z"
+		},
+		{
+			"path": "github.com/wu-xian/go-talker/common",
+			"revision": "adc146eef18a2e096ccfda69d6681d0f62109191",
+			"revisionTime": "2018-05-20T01:07:44Z"
+		},
+		{
+			"path": "github.com/wu-xian/go-talker/log",
+			"revision": "adc146eef18a2e096ccfda69d6681d0f62109191",
+			"revisionTime": "2018-05-20T01:07:44Z"
+		},
+		{
+			"path": "github.com/wu-xian/go-talker/proto",
+			"revision": "adc146eef18a2e096ccfda69d6681d0f62109191",
+			"revisionTime": "2018-05-20T01:07:44Z"
+		},
+		{
+			"path": "github.com/wu-xian/go-talker/server",
+			"revision": "adc146eef18a2e096ccfda69d6681d0f62109191",
+			"revisionTime": "2018-05-20T01:07:44Z"
+		},
+		{
+			"path": "github.com/wu-xian/go-talker/terminal",
+			"revision": "adc146eef18a2e096ccfda69d6681d0f62109191",
+			"revisionTime": "2018-05-20T01:07:44Z"
+		},
+		{
 			"checksumSHA1": "jAgCAPJEL3/CoZ5d14CTjc1sWJk=",
 			"path": "gopkg.in/ini.v1",
 			"revision": "6333e38ac20b8949a8dd68baa3650f4dee8f39f0",
 			"revisionTime": "2018-03-08T09:54:59Z"
+		},
+		{
+			"path": "image",
+			"revision": ""
+		},
+		{
+			"path": "io",
+			"revision": ""
+		},
+		{
+			"path": "io/ioutil",
+			"revision": ""
+		},
+		{
+			"path": "learn/src/go-talker/log",
+			"revision": "950d6e9555ed5185d72670fd89620b28d4eae58d",
+			"revisionTime": "2018-05-19T15:38:51Z"
+		},
+		{
+			"path": "log",
+			"revision": ""
+		},
+		{
+			"path": "math",
+			"revision": ""
+		},
+		{
+			"path": "net",
+			"revision": ""
+		},
+		{
+			"path": "net/http",
+			"revision": ""
+		},
+		{
+			"path": "net/smtp",
+			"revision": ""
+		},
+		{
+			"path": "net/url",
+			"revision": ""
+		},
+		{
+			"path": "os",
+			"revision": ""
+		},
+		{
+			"path": "os/signal",
+			"revision": ""
+		},
+		{
+			"path": "path",
+			"revision": ""
+		},
+		{
+			"path": "path/filepath",
+			"revision": ""
+		},
+		{
+			"path": "reflect",
+			"revision": ""
+		},
+		{
+			"path": "regexp",
+			"revision": ""
+		},
+		{
+			"path": "runtime",
+			"revision": ""
+		},
+		{
+			"path": "sort",
+			"revision": ""
+		},
+		{
+			"path": "strconv",
+			"revision": ""
+		},
+		{
+			"path": "strings",
+			"revision": ""
+		},
+		{
+			"path": "sync",
+			"revision": ""
+		},
+		{
+			"path": "syscall",
+			"revision": ""
+		},
+		{
+			"path": "text/tabwriter",
+			"revision": ""
+		},
+		{
+			"path": "text/template",
+			"revision": ""
+		},
+		{
+			"path": "time",
+			"revision": ""
+		},
+		{
+			"path": "unicode",
+			"revision": ""
+		},
+		{
+			"path": "unicode/utf16",
+			"revision": ""
+		},
+		{
+			"path": "unicode/utf8",
+			"revision": ""
+		},
+		{
+			"path": "unsafe",
+			"revision": ""
 		}
 	],
 	"rootPath": "github.com/wu-xian/go-talker"

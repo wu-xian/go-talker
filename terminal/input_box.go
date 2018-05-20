@@ -1,7 +1,7 @@
 package terminal
 
 import (
-	"learn/src/go-talker/log"
+	"github.com/wu-xian/go-talker/log"
 
 	"github.com/cjbassi/termui"
 )
