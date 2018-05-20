@@ -12,12 +12,12 @@
 
 #### 服务端
 
-<img src="https://github.com/wu-xian/go-talker/media/server.gif" />
+<img src="https://github.com/wu-xian/go-talker/blob/master/media/server.gif" />
 
 #### 客户端1
 
-<img src="https://github.com/wu-xian/go-talker/media/client1.gif" />
+<img src="https://github.com/wu-xian/go-talker/blob/master/media/client1.gif" />
 
 #### 客户端2
 
-<img src="https://github.com/wu-xian/go-talker/media/client2.gif" />
+<img src="https://github.com/wu-xian/go-talker/blob/master/media/client2.gif" />
