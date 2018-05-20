@@ -1,0 +1,14 @@
+package proto
+
+import "github.com/mauricelam/genny/generic"
+import	p "github.com/golang/protobuf/proto"
+
+type T generic.Type
+
+func (self *T) MessageMarshal() ([]byte, error) {
+	return p.Marshal(self)
+}
+
+func (self *T) MessageUnmarshal(bytes []byte) error {
+	return p.Unmarshal(bytes, self)
+}

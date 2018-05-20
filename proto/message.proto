@@ -1,0 +1,83 @@
+
+syntax = "proto3";
+
+package proto;
+
+//通讯类型
+enum COMMUNICATION_TYPE{
+    LoginRequest = 0; //客户端登陆请求
+    LoginResponse = 1;//客户端登陆响应
+    LogoutRequest = 2;//客户端登出请求
+    LogoutResponse = 3;//客户端登出响应
+    ClientLogin =4;//其他客户端登陆
+    ClientLogout =5;//其他客户端登出
+    ClientReceived = 6;//客户端接收消息
+    ClientSend = 7; //客户端发送消息
+    OnlineClients = 8;//当前在线客户端
+}
+
+//消息壳
+message MessageWarpper{
+    COMMUNICATION_TYPE Type = 1;//消息类型
+    MessageLoginRequest MessageLoginRequest =2 ;//客户端登陆响应
+    MessageLoginResponse MessageLoginResponse = 3;//客户端登陆响应
+    MessageLogoutRequest MessageLogoutRequest =4;//客户端登出请求
+    MessageLogoutResponse MessageLogoutResponse =5;//客户端登出响应
+    MessageClientLogin MessageClientLogin=6;//其他客户端登陆
+    MessageClientLogout MessageClientLogout=7;//其他客户端登出
+    MessageClientReceived MessageClientReceived=8;//客户端接收消息
+    MessageClientSend MessageClientSend=9;//客户端发送消息
+    MessageOnlineClients MessageOnlineClients =10;//登陆时获取当前在线客户端
+}
+
+//客户端登入请求
+message MessageLoginRequest{
+    string Name = 1;
+    string Token = 2;
+}
+
+//客户端登入响应
+message MessageLoginResponse{
+    bool Succeed = 1;
+    int32 Id =2 ;
+}
+
+//客户端登出请求
+message MessageLogoutRequest{
+
+}
+
+//客户端登出响应
+message MessageLogoutResponse{
+    bool Succeed = 1;
+}
+
+//其他客户端登陆
+message MessageClientLogin{
+    int32 Id = 1;
+    string Name = 2;
+}
+
+//其他客户端登出
+message MessageClientLogout{
+    int32 Id = 1;
+    string Name = 2;
+}
+
+//客户端接收消息
+message MessageClientReceived{
+    int32 Id = 1;
+    string Name = 2;
+    string Content = 3;
+}
+
+//客户端发送消息
+message MessageClientSend{
+    string Content = 1;
+}
+
+//当前在线客户端 
+message MessageOnlineClients{
+    repeated int32 Ids =1;
+    repeated string Names =2;
+}
