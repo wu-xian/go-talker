@@ -211,25 +211,10 @@ func Logout(conn *net.TCPConn) error {
 	}
 	bytes, err := logoutMessage.MessageMarshal()
 	if err != nil {
-		log.Logger.Info("", err)
+		log.Logger.Info("logout err:", err)
 		return err
 	}
 	conn.Write(bytes)
-	//count, err := conn.Write(bytes)
-	// if err != nil {
-	// 	return errors.New("logout")
-	// }
-	// if count >= MESSAGE_MAX_LENGTH {
-	// 	return errors.New("message too big")
-	// }
-
-	// readBytes := make([]byte, 0)
-	// count, err = conn.Read(readBytes)
-	// msg := MessageInterpreter(readBytes[:count])
-	// if msg.Type == proto.COMMUNICATION_TYPE_LogoutResponse &&
-	// 	msg.MessageLogoutResponse.Succeed {
-	// 	return nil
-	// }
 
 	return nil
 }

@@ -57,7 +57,6 @@ func LoopClientUI(messageChan chan *proto.MessageWarpper, messagePublishChan cha
 					UILocker.Lock()
 					ui.Render(ui.Body)
 					UILocker.Unlock()
-					log.Logger.Info("client list out chan")
 				}
 			case _ = <-messageBox.InChan:
 				{
@@ -74,7 +73,6 @@ func LoopClientUI(messageChan chan *proto.MessageWarpper, messagePublishChan cha
 			select {
 			case message := <-messageChan:
 				{
-					log.Logger.Info("get message , type:", message.Type)
 					switch message.Type {
 					case proto.COMMUNICATION_TYPE_ClientLogin:
 						{
@@ -122,7 +120,6 @@ func LoopClientUI(messageChan chan *proto.MessageWarpper, messagePublishChan cha
 					}
 				}
 			}
-			log.Logger.Info("end of select")
 		}
 	}()
 

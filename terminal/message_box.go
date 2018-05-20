@@ -20,12 +20,10 @@ type MessageBox struct {
 }
 
 func (self *MessageBox) AddMessage(message Message) {
-	//self.locker.Lock()
-	log.Logger.Info("add message !!!!!!!")
+	self.locker.Lock()
 	self.Messages = append(self.Messages, message)
-	//self.locker.Unlock()
+	self.locker.Unlock()
 	self.InChan <- &message
-	log.Logger.Info("add message !!!!!!! over")
 }
 
 func NewMessageBox() *MessageBox {
